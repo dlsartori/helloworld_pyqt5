@@ -1,4 +1,4 @@
-# Hellow World
+# Hello World
 Mínimas porciones funcionales de código
 ## HW1
 API SQLite de Python
