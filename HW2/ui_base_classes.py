@@ -28,7 +28,7 @@ class HelloWorldWindow(QWidget):
         Inicialización de la UI
         Acá se se define la apariencia de la ventana y se crean sus elementos
         """
-        self.setGeometry(100, 100, 400, 300)    # posición y dimensiones de la ventana
+        self.setGeometry(100, 100, 300, 200)    # posición y dimensiones de la ventana
         self.setWindowTitle('Ventana vacía en PyQt')    # título de la ventana
 
         # Importante: las ventanas están ocultas por defecto

@@ -7,7 +7,7 @@ class HelloWorldWindow(QWidget):
         self.initializeUI()
 
     def initializeUI(self):
-        self.setGeometry(100, 100, 400, 300)
+        self.setGeometry(100, 100, 300, 200)
         self.setWindowTitle('Ventana vacía en PyQt')
         self.show()
 
