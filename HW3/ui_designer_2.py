@@ -17,3 +17,4 @@ if __name__ == '__main__':
     dialog = MyDialog()
     dialog.show()
     sys.exit(app.exec_())
+
