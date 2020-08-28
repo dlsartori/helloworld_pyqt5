@@ -7,10 +7,12 @@ import sys
 
 DialogUI, DialogBase = uic.loadUiType("dialog_form.ui")
 
+
 class MyDialog(DialogBase, DialogUI):
     def __init__(self, parent=None):
         DialogBase.__init__(self, parent)
         self.setupUi(self)
+
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
