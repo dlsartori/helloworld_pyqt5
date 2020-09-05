@@ -19,7 +19,7 @@ Importado de 3 formas distintas:
   - uic.loadUiType()
   
     ![ui_designer_2](img/ui_designer_2.png)
-  - convertido mediante puyuic5
+  - convertido mediante pyuic5
 
      ![ui_designer_3](img/ui_designer_3.png)
 
