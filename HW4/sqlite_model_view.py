@@ -6,6 +6,7 @@ import sys
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
+    app.setStyle('windows')
     window = uic.loadUi("dialog_form.ui")
 
     db = QSqlDatabase.addDatabase("QSQLITE")
@@ -22,4 +23,3 @@ if __name__ == '__main__':
 
     window.show()
     sys.exit(app.exec_())
-
