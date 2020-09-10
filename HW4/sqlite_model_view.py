@@ -16,7 +16,7 @@ if __name__ == '__main__':
     model.setRelation(1, QSqlRelation("Provincias", "ID_Provincia", "[Nombre Provincia]"))
     model.select()
     # query = QSqlQuery()
-    # query.exec_("SELECT * FROM Animales")
+    # query.exec_("SELECT * FROM Departamentos")
     # model.setQuery(query)
     window.tableView1.setModel(model)
 
