@@ -1,5 +1,5 @@
 from PyQt5.QtWidgets import QApplication
-from PyQt5.QtSql import QSqlDatabase, QSqlQuery, QSqlTableModel
+from PyQt5.QtSql import QSqlDatabase, QSqlQuery, QSqlTableModel, QSqlRelationalTableModel, QSqlRelation
 from PyQt5 import uic
 import sys
 
@@ -9,13 +9,15 @@ if __name__ == '__main__':
     window = uic.loadUi("dialog_form.ui")
 
     db = QSqlDatabase.addDatabase("QSQLITE")
-    db.setDatabaseName("GanadoSQLite.db")
+    db.setDatabaseName("geo.db")
     db.open()
-    query = QSqlQuery()
-    query.exec_("SELECT * FROM Animales")
-    model = QSqlTableModel()
-    model.setTable("Animales")
-    model.setQuery(query)
+    model = QSqlRelationalTableModel()
+    model.setTable("Departamentos")
+    model.setRelation(1, QSqlRelation("Provincias", "ID_Provincia", "[Nombre Provincia]"))
+    model.select()
+    # query = QSqlQuery()
+    # query.exec_("SELECT * FROM Animales")
+    # model.setQuery(query)
     window.tableView1.setModel(model)
 
     window.show()
